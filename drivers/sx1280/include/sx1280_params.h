@@ -86,6 +86,7 @@ extern "C" {
 /**
  * @brief Default sx1280 parameters
  */
+#ifndef SX1280_PARAMS
 #define SX1280_PARAMS             { .spi = SX1280_PARAM_SPI,            \
                                     .spi_mode = SX1280_PARAM_SPI_MODE,  \
                                     .spi_clk = SX1280_PARAM_SPI_CLK,    \
@@ -94,6 +95,7 @@ extern "C" {
                                     .dio0_pin = SX1280_PARAM_DIO0,      \
                                     .dio1_pin = SX1280_PARAM_DIO1,      \
 }
+#endif
 
 /**@}*/
 
